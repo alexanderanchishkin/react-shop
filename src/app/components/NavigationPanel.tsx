@@ -49,7 +49,7 @@ const NavigationPanel = (props: INavigationPanelProps) => {
   }
 
   return (
-    <Paper sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}>
+    <Paper sx={{ position: "sticky", bottom: 0, left: 0, right: 0 }}>
       <BottomNavigation showLabels={true} onChange={onChange} value={page}>
         {pages.map((page) => (
           <BottomNavigationAction key={page.value} component={Link} {...page} />
