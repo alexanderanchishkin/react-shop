@@ -1,6 +1,5 @@
-import Main from "./pages/Main";
-import Page from "./components/Page";
+import App from '@/app/App';
 
-export default function App() {
-  return <main><Page><Main /></Page></main>
+export default function Page() {
+  return <App />
 }
